@@ -135,6 +135,7 @@ theme/mastodon.zip
 * [x] 自动生成摘要（excerpt）
 * [x] 插入文章特色图片
 * [x] 标签增强（有媒体 / 有折叠）
+* [x] 私密嘟文非公开（private）
 
 ---
 
