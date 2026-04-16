@@ -27,7 +27,7 @@ Mastodon 官方不支持将历史嘟文迁移到新平台。
 ├── dist/
 │   └── mastodon2wordpress.exe # 可执行文件exe
 ├── docs/
-│   └── guide.md               # 迁移教程（待完善）
+│   └── guide.md               # 迁移教程
 ├── theme/
 │   └── mastodon.zip           # 自定义 WordPress 主题
 ├── images/                    # 文档配图
@@ -35,8 +35,23 @@ Mastodon 官方不支持将历史嘟文迁移到新平台。
 ```
 
 ---
+## 📚 Mastodon → WordPress 完整迁移教程
 
-## 🚀 快速开始（脚本使用）
+👉 👉 👉 **请查看：** [guide.md](https://github.com/kunsui/mastodon_to_wordpress/blob/main/docs/guide.md)
+
+```
+docs/guide.md
+```
+
+包含：
+
+* Mastodon 数据导出
+* WordPress 设置与主题安装
+* JSON 导入插件使用
+
+---
+
+## 🚀 脚本使用
 
 ### 1️⃣ 准备 Mastodon 数据
 
@@ -46,23 +61,18 @@ Mastodon 官方不支持将历史嘟文迁移到新平台。
 outbox.json
 ```
 
----
-
 ### 2️⃣ 运行脚本
 
 ```bash
 python mastodon2wordpress.py outbox.json https://your-site.com 1
 ```
 
-参数说明：
-
-| 参数                    | 说明              |
-| --------------------- | --------------- |
+| 参数                  | 说明               |
+| --------------------- | ------------------ |
 | outbox.json           | Mastodon 导出文件   |
 | https://your-site.com | 你的 WordPress 域名 |
-| 1              | 起始文章编号          |
-
----
+| 1                     | 起始文章编号         |
+<br>
 
 ### 3️⃣ 输出结果
 
@@ -72,30 +82,15 @@ python mastodon2wordpress.py outbox.json https://your-site.com 1
 output.json
 ```
 
-可直接用于 WordPress 导入插件**Post Export Import with Media**。
+可直接用于 WordPress 导入插件[**Post Export Import with Media**](https://wordpress.org/plugins/post-export-import-with-media/)
 
----
-
-### 直接使用 exe（无需 Python）
+<br><br>
+### ⏩ 直接使用 exe（无需 Python）
 
 1. 下载 `dist/mastodon2wordpress.exe`
 2. 准备准备 Mastodon 数据 `outbox.json`
 3. 拖拽 JSON 到 exe 上运行
-
----
-## 📚 完整迁移教程（待完善）
-
-👉 👉 👉 **请查看：**
-
-```
-docs/guide.md（待完善）
-```
-
-包含：
-
-* Mastodon 数据导出
-* WordPress 设置与主题安装
-* JSON 导入插件使用
+<br>
 
 ---
 
@@ -109,10 +104,17 @@ theme/mastodon.zip
 
 特点：
 
-* 基于官方主题修改
+* 基于官方主题二〇二五修改
 * 适配 Mastodon 风格阅读
 * 支持图片 / 视频展示
 * 简洁归档风格
+
+---
+
+## 🖼️ 效果展示
+
+![示例](images/guide/wp-import-step17.jpg)
+![示例](images/guide/wp-import-step18.jpg)
 
 ---
 
