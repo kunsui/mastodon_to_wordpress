@@ -7,13 +7,12 @@
 ## ✨ 项目简介
 
 Mastodon 官方不支持将历史嘟文迁移到新平台。
-本项目提供一个**完整的归档解决方案**：
+本项目提供一个**归档解决方案**：
 
 * 📄 转换嘟文 JSON → WordPress 导入格式
 * 🖼️ 保留图片 / 视频媒体
 * 🏷️ 保留标签（Hashtag）
 * 💬 保留回复关系（引用原帖）
-* 🧱 生成 Gutenberg（区块编辑器）兼容内容
 * 📚 提供完整迁移教程（从导出 → 部署 → 导入）
 
 
@@ -22,25 +21,7 @@ Mastodon 官方不支持将历史嘟文迁移到新平台。
 https://github.com/hidezember/mastodon-to-wordpress
 
 ---
-
-## 🧩 项目结构
-
-```
-.
-├── script/
-│   └── mastodon2wordpress.py  # JSON 转换脚本
-├── dist/
-│   └── mastodon2wordpress.exe # 可执行文件exe
-├── docs/
-│   └── guide.md               # 迁移教程
-├── theme/
-│   └── mastodon.zip           # 自定义 WordPress 主题
-├── images/                    # 文档配图
-└── README.md
-```
-
----
-## 📚 Mastodon → WordPress 完整迁移教程
+## 📚 完整迁移教程
 
 👉 👉 👉 **请查看：** [guide.md](https://github.com/kunsui/mastodon_to_wordpress/blob/main/docs/guide.md)
 
