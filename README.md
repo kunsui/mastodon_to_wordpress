@@ -16,6 +16,11 @@ Mastodon 官方不支持将历史嘟文迁移到新平台。
 * 🧱 生成 Gutenberg（区块编辑器）兼容内容
 * 📚 提供完整迁移教程（从导出 → 部署 → 导入）
 
+
+感谢：  
+本项目参考了以下项目的思路和一部分代码  
+https://github.com/hidezember/mastodon-to-wordpress
+
 ---
 
 ## 🧩 项目结构
