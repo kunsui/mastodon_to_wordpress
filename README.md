@@ -143,12 +143,6 @@ theme/mastodon.zip
 
 ---
 
-## 📄 License
-
-MIT License
-
----
-
 ## 🙋‍♂️ 关于
 
 这个项目最初是为了将旧 Mastodon 账号内容迁移到 WordPress 作为长期存档。
