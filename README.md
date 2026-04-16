@@ -122,7 +122,6 @@ theme/mastodon.zip
 
 * Mastodon 媒体需要**手动上传到 WordPress**
 * JSON 导入依赖第三方插件**Post Export Import with Media**
-* 视频默认使用 `<video>` 标签嵌入
 * 若导入重复，取决于插件对 `post_title` 的判断
 
 ---
