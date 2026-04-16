@@ -51,7 +51,7 @@ outbox.json
 ### 2️⃣ 运行脚本
 
 ```bash
-python convert.py outbox.json https://your-site.com 1
+python mastodon2wordpress.py outbox.json https://your-site.com 1
 ```
 
 参数说明：
@@ -83,7 +83,7 @@ output.json
 3. 拖拽 JSON 到 exe 上运行
 
 ---
-## 📚 完整迁移教程
+## 📚 完整迁移教程（待完善）
 
 👉 👉 👉 **请查看：**
 
