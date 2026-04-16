@@ -128,14 +128,14 @@ dist/mastodon2wordpress.exe
 
 ![生成output.json文件](../images/guide/wp-import-step12.jpg)
 
-得到了转换后的文件后，等媒体上传完成就可以进行嘟文的导入了
-在 WordPress 左边栏找到 **Export/Import Posts**（刚才安装的导入插件）
-在插件的**Import Posts**栏上点击**Select JSON File**，选择转换得到的文件 `output.json`
+得到了转换后的文件后，等媒体上传完成就可以进行嘟文的导入了  
+在 WordPress 左边栏找到 **Export/Import Posts**（刚才安装的导入插件）  
+在插件的**Import Posts**栏上点击**Select JSON File**，选择转换得到的文件 `output.json`  
 下面的选项**只勾选第一个选项**，**取消勾选第二个选项**
 
 ![在导入插件中选择转换好的文件，勾选查找媒体](../images/guide/wp-import-step13.jpg)
 
-然后点击**Start Import**，就开始导入文章了
+然后点击**Start Import**，就开始导入文章了  
 大量的嘟文需要较长的时间才能导入完成，请不要刷新或关闭这个页面
 
 ![开始导入嘟文](../images/guide/wp-import-step14.jpg)
@@ -144,7 +144,7 @@ dist/mastodon2wordpress.exe
 
 ![导入完成的弹窗提示](../images/guide/wp-import-step15.jpg)
 
-在导入大量数据时，通常会有小部分数据丢失，点击**Let's retry**就可以把丢失的数据重新导入
+在导入大量数据时，通常会有小部分数据丢失，点击**Let's retry**就可以把丢失的数据重新导入  
 至此所有的导入流程就结束了
 
 ![重试导入丢失数据](../images/guide/wp-import-step16.jpg)
