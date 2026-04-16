@@ -76,5 +76,50 @@ theme/mastodon.zip
 
 ![站点首页](../images/guide/wp-import-step7.jpg)
 
+
+---
+
+## 🪄媒体的导入与 JSON 导入插件的使用
+
+记住必须**先导入媒体**，**后导入嘟文**  
+
+在 WordPress 左边栏找到**媒体**，进入媒体库  
+导入 Mastodon 的媒体之前，可以先保存下面这张图片，上传到媒体库  
+（用于作为含视频的文章的特色图片，可以省略这一步，只是特色图片会变空白）
 <img src="../images/video.png" alt="视频图标" width="200">
+
+```
+images/video.png  # 不要改动名字
+```
+
+接着把从 Mastodon 导出的媒体文件全部上传到媒体库  
+把媒体文件夹 `media_attachments\files` 整个拖入媒体库就能上传全部文件
+
+![把媒体文件夹拖入媒体库](../images/guide/wp-import-step8.jpg)
+
+大量的媒体文件需要等网页反应一会儿，就能看到上传中的画面  
+请停留在这个画面等待所有媒体文件上传完成
+
+![等媒体上传完成](../images/guide/wp-import-step9.jpg)
+
+等待媒体上传的过程中就可以进行嘟文的格式转换  
+从 Mastodon 导出的原始格式转换为可用于 WordPress 导入的格式
+
+下载本项目打包好的格式转换可执行文件 [mastodon2wordpress.exe](https://github.com/kunsui/mastodon_to_wordpress/raw/refs/heads/main/dist/mastodon2wordpress.exe)
+
+```
+dist/mastodon2wordpress.exe
+```
+
+把从 Mastodon 导出得到的 `outbox.json` 文件拖到 `mastodon2wordpress.exe` 上执行
+
+![把outbox.json拖入可执行文件](../images/guide/wp-import-step10.jpg)
+
+接着会弹出一个黑框框，输入你 WordPress 网站的URL和起始文章编号，按回车开始转换
+
+![执行转换脚本](../images/guide/wp-import-step11.jpg)
+
+> 起始文章编号：脚本会按嘟文的顺序用1,2,3,4的编号作为WordPress文章的标题，起始编号通常为1  
+> 导入插件默认以文章标题是否一致来判断文章是否重复导入，重复文章的会被跳过  
+> 进行多次导入时请注意文章的标题编号不要重复，二次导入时可以接着上一次的最后编号+1作为起始编号
 
